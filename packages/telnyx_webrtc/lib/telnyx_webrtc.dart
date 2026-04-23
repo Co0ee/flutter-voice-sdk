@@ -63,3 +63,4 @@ export './model/latency_metrics.dart';
 export './utils/latency_tracker.dart';
 
 export './telnyx_client.dart';
+export './utils/call_timing_benchmark.dart';

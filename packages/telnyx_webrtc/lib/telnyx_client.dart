@@ -3162,4 +3162,9 @@ class TelnyxClient {
   SocketConnectionMetrics getConnectionMetrics() {
     return txSocket.getConnectionMetrics();
   }
+
+  void resetValues() {
+    _pendingAnswerFromPush = false;
+    _pendingDeclineFromPush = false;
+  }
 }

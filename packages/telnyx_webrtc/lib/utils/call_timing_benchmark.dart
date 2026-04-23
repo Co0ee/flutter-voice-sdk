@@ -81,4 +81,9 @@ class CallTimingBenchmark {
 
     GlobalLogger().i(buffer.toString());
   }
+
+  /// Returns unmodifiable copy of recorded milestones for external access.
+  /// Use after `end()` or when peer reaches connected state.
+  static Map<String, int> get milestones => Map.unmodifiable(_milestones);
+  static bool get isOutbound => _isOutbound;
 }
